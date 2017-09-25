@@ -1,0 +1,14 @@
+page-profile {
+    ion-card {
+        position: relative;
+        text-align: center;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        height: 200px !important;
+      }
+
+      page-me .card-background-page ion-card {
+        height: 200px !important;
+    }
+}

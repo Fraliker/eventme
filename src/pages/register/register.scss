@@ -1,0 +1,89 @@
+page-register {
+    
+        .scroll-content{
+            align-content: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        ion-card.card{
+            box-shadow: none;
+            background: rgba(0,0,0,0);
+        }
+    
+        .item{
+            margin-bottom: 10px;
+            background: rgba(0,0,0,0);
+            // padding-left: 0px;
+    
+            .text-input{
+                color: #fff;
+                border-bottom: 1px solid;
+                border-bottom-color: #e9e9e9;        
+            }
+    
+            .text-input-wp {
+                border: 0px;
+                border-bottom: 1px solid;
+                border-bottom-color: #e9e9e9;       
+            }
+    
+            $text-input-placeholder-color: #fff !important;
+        }
+    
+        .password-bottom{
+            margin-top:10px !important;
+        }
+    
+        a{
+            color: #fff;
+        }
+    
+        p{
+            margin-top:45px !important;
+            margin-bottom: 10px !important;
+            color: #fff!important;
+        }
+    
+        .icon{
+            padding-right: 10px;
+        }
+    
+        .opacity-login{
+            opacity: 0.8;
+            color: #e42d9f;
+        }
+    
+        .opacity-facebook{
+            opacity: 0.5;
+            color: #3b5998;
+        }
+    
+        .opacity-google{
+            opacity: 0.5;
+            color: #db3236;
+        }
+    
+        .bottom{
+            position: absolute;
+            bottom: 10px;
+        }
+    
+        #welcome{    
+            background: -moz-linear-gradient(top, rgba(228,45,159,1) 0%, rgba(99,109,198,0.95) 50%, rgba(214,42,148,0.9) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(228,45,159,1) 0%,rgba(99,109,198,0.95) 50%,rgba(214,42,148,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #A208C9,#DB5EC9, #5F81DD, #DB5EC9, #8E4AAD); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42d9f', endColorstr='#e6d62a94',GradientType=0 ); /* IE6-9 */
+                
+            background-size: 400% 400%;
+            animation: colorchange 25s ease-out infinite;
+    
+            @keyframes colorchange{
+                0%{background-position: 0% 99%}
+                50%{background-position: 100% 1%}
+                100%{background-position: 10% 90%}
+            }
+        }
+    }
+    

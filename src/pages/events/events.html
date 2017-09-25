@@ -1,0 +1,243 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--<ion-header>
+  <ion-navbar color="primary">
+    <!-- <ion-title>Events</ion-title> -->
+    <!--<ion-searchbar item-start></ion-searchbar>-->
+    <!-- <ion-item float-right>
+        <ion-icon name="pin"></ion-icon>
+    </ion-item> -->
+    <!-- <ion-list>
+      <ion-item *ngFor="let item of items">
+        {{ item }}
+      </ion-item>
+    </ion-list> -->
+  <!--</ion-navbar>-->
+  <!-- <ion-toolbar>
+      <ion-item>
+        <ion-range min="20" max="80" step="2" [(ngModel)]="brightness">
+          <ion-icon small range-left name="sunny"></ion-icon>
+          <ion-icon range-right name="sunny"></ion-icon>
+        </ion-range>
+      </ion-item>
+  </ion-toolbar>   -->
+<!--</ion-header>-->-->
+
+<ion-content class="card-background-page" hide-fab>
+    <ion-segment [(ngModel)]="events">
+           <ion-segment-button value="categories">
+          Categories
+        </ion-segment-button>
+        <ion-segment-button value="today">
+          Today
+        </ion-segment-button>
+        <!-- <ion-segment-button value="bookmarks">
+          Tomorrow
+        </ion-segment-button> -->
+        <ion-segment-button value="going">
+          Upcoming
+        </ion-segment-button>
+   
+      </ion-segment>
+  <div [ngSwitch]="events">
+
+    <ion-list *ngSwitchCase="'today'">
+      <ion-card>
+        <img src="../assets/images/map.jpg">
+        <ion-fab right top>
+          <button ion-fab mini>
+            <ion-icon name="pin"></ion-icon>
+          </button>
+        </ion-fab>
+                  
+        <ion-item>
+          <ion-icon name="ios-restaurant" item-start large></ion-icon>
+          <h2>Pasar Malam</h2>
+          <p>Nice sumptious food over here.</p>
+          <p class="start-space">Start: 9th Sept 2017 (9.00am)</p>
+          <p>End: 10 Sept 2017 (9.00pm)</p>
+          <button ion-button icon-left clear item-end>
+              <ion-icon ios="ios-share" md="md-share"></ion-icon>
+              Share
+          </button>
+        </ion-item>
+                            
+        <ion-item>
+          <button ion-button icon-left clear item-left>
+              <ion-icon name="ios-bookmark-outline"></ion-icon>
+              Bookmark
+          </button>
+          <button ion-button icon-left clear item-left>
+              <ion-icon name="ios-thumbs-up-outline"></ion-icon>
+                3 Likes
+          </button>
+          <button ion-button icon-left clear item-end>
+            <ion-icon name="md-walk"></ion-icon>
+            Going
+          </button>
+        </ion-item>              
+      </ion-card>
+      <ion-card>
+          <img src="http://lorempixel.com/350/100/sports">
+          <ion-fab right top>
+            <button ion-fab mini>
+              <ion-icon name="pin"></ion-icon>
+            </button>
+          </ion-fab>
+                    
+          <ion-item>
+            <ion-icon name="football" item-start large></ion-icon>
+            <h2>Pasar Malam</h2>
+            <p>11 Tampines St 21</p>
+          </ion-item>
+                              
+          <ion-item>
+            <button ion-button icon-left clear item-left>
+                <ion-icon name="ios-bookmark-outline"></ion-icon>
+                Bookmark
+            </button>
+            <button ion-button icon-left clear item-left>
+                <ion-icon name="ios-thumbs-up-outline"></ion-icon>
+                  3 Likes
+            </button>
+            <button ion-button icon-left clear item-end>
+              <ion-icon name="md-walk"></ion-icon>
+              Going
+            </button>
+          </ion-item>              
+        </ion-card>
+        
+        <ion-card>
+            <img src="http://lorempixel.com/350/100/sports">
+            <ion-fab right top>
+              <button ion-fab mini>
+                <ion-icon name="pin"></ion-icon>
+              </button>
+            </ion-fab>
+                      
+            <ion-item>
+              <ion-icon name="football" item-start large></ion-icon>
+              <h2>Pasar Malam</h2>
+              <p>11 Tampines St 21</p>
+            </ion-item>
+                                
+            <ion-item>
+              <button ion-button icon-left clear item-left>
+                  <ion-icon name="ios-bookmark-outline"></ion-icon>
+                  Bookmark
+              </button>
+              <button ion-button icon-left clear item-left>
+                  <ion-icon name="ios-thumbs-up-outline"></ion-icon>
+                    3 Likes
+              </button>
+              <button ion-button icon-left clear item-end>
+                <ion-icon name="md-walk"></ion-icon>
+                Going
+              </button>
+            </ion-item>              
+          </ion-card>          
+    </ion-list>
+      
+    <ion-list *ngSwitchCase="'categories'">
+      <ion-card class="ion-card">
+          <img src="http://lorempixel.com/350/150/food"/>
+          <div class="card-title">Food</div>
+          <div class="card-subtitle">41 Listings</div>
+      </ion-card>
+        
+      <ion-card>
+        <img src="http://lorempixel.com/350/150/sports"/>
+        <div class="card-title">Sports</div>
+        <div class="card-subtitle">64 Listings</div>
+      </ion-card>
+    
+      <ion-card>
+        <img src="http://lorempixel.com/350/150/fashion"/>
+        <div class="card-title">Fashion</div>
+        <div class="card-subtitle">72 Listings</div>
+      </ion-card>
+    
+      <ion-card>
+        <img src="http://lorempixel.com/350/150/nightlife"/>
+        <div class="card-title">Nightlife</div>
+        <div class="card-subtitle">28 Listings</div>
+      </ion-card>
+  </ion-list>
+
+
+  <ion-list *ngSwitchCase="'going'">
+      <ion-card>
+        <img src="http://lorempixel.com/350/100/sports">
+        <ion-fab right top>
+          <button ion-fab mini>
+            <ion-icon name="pin"></ion-icon>
+          </button>
+        </ion-fab>
+                  
+        <ion-item>
+          <ion-icon name="football" item-start large></ion-icon>
+          <h2>Pasar Malam</h2>
+          <p>11 Tampines St 21</p>
+        </ion-item>
+                            
+        <ion-item>
+          <button ion-button icon-left clear item-left>
+              <ion-icon name="ios-bookmark-outline"></ion-icon>
+              Bookmark
+          </button>
+          <button ion-button icon-left clear item-left>
+              <ion-icon name="ios-thumbs-up-outline"></ion-icon>
+                3 Likes
+          </button>
+          <button ion-button icon-left clear item-end>
+            <ion-icon name="md-walk"></ion-icon>
+            Not Going
+          </button>
+        </ion-item>              
+      </ion-card>          
+    </ion-list>
+
+    <!-- <ion-list *ngSwitchCase="'bookmarks'">
+        <ion-card>
+          <img src="http://lorempixel.com/350/100/sports">
+          <ion-fab right top>
+            <button ion-fab mini>
+              <ion-icon name="pin"></ion-icon>
+            </button>
+          </ion-fab>
+                    
+          <ion-item>
+            <ion-icon name="football" item-start large></ion-icon>
+            <h2>Pasar Malam</h2>
+            <p>11 Tampines St 21</p>
+          </ion-item>
+                              
+          <ion-item>
+            <button ion-button icon-left clear item-left>
+                <ion-icon name="ios-bookmark"></ion-icon>
+                Bookmarked
+            </button>
+            <button ion-button icon-left clear item-left>
+                <ion-icon name="ios-thumbs-up-outline"></ion-icon>
+                  3 Likes
+            </button>
+            <button ion-button icon-left clear item-end>
+              <ion-icon name="md-walk"></ion-icon>
+              Going
+            </button>
+          </ion-item>              
+        </ion-card>          
+      </ion-list> -->
+
+    </div>
+	<ion-fab bottom right #fab>
+		<button ion-fab (click)="addEvent()">
+		  <ion-icon name="create"></ion-icon>
+		</button>
+	</ion-fab>
+</ion-content>
+

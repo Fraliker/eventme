@@ -1,0 +1,8 @@
+{
+  "name": "eventme",
+  "app_id": "80287cd9",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

@@ -1,0 +1,11 @@
+page-event-modal {
+    .item{        
+        background: transparent !important;
+    }
+
+  .bg{
+    background: -moz-linear-gradient(bottom, rgba(0,188,212, 1) 0%, rgba(0,188,212, 0.8) 50%, rgba(0,188,212, 0.6) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,188,212, 1) 0%,rgba(0,188,212, 0.8) 50%,rgba(0,188,212, 0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(15deg, rgba(0,188,212, 1),rgba(109, 226, 170, 0.6), rgba(37, 240, 172, 0.75) ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42d9f', endColorstr='#e6d62a94',GradientType=0 ); /* IE6-9 */
+  }
+}

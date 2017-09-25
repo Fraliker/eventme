@@ -1,0 +1,32 @@
+<ion-content id="welcome">
+    <ion-slides pager (ionSlideDidChange)="slideChanged()" (ionSlideDrag)="slideMoved()">
+      <ion-slide>
+        <div class="diag" >
+          <ion-icon ios="ios-map" md="md-map" color="primary" [@bounce]='state' (@bounce.done)="animationDone()"></ion-icon>
+        </div>
+        <div [@bounce]='state'>
+          <h2>Find your nearest event.</h2>
+          <p>Whether its a small or big event, find your favourite event near you, anytime and anywhere</p>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="diag" >
+          <ion-icon ios="ios-calendar" md="md-calendar" color="primary" [@bounce]='state'></ion-icon>
+        </div>
+        <div [@bounce]='state'>
+          <h2>Share your events</h2>
+          <p>Share your personal events to the world</p>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="diag" >
+          <ion-icon ios="ios-notifications" md="md-notifications" color="primary" [@bounce]='state'></ion-icon>
+        </div>
+        <div [@bounce]='state'>
+          <h2>Get reminded</h2>
+          <p>Ever missed an event? Look no further with automated reminders</p>
+        </div>
+      </ion-slide>
+    </ion-slides>
+    <button (click)="skip()" id="skip">{{ skipMsg }}</button>
+  </ion-content>

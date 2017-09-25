@@ -1,0 +1,119 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+@import "ionic.globals";
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #00BCD4,
+  secondary:  #D62AFF,
+  danger:     #db3236,
+  light:      #fff,
+  dark:       #222,
+  facebook:   #3b5998,
+  google:     #db3236,
+  linkedin:   #0077B5,
+  fab: (
+    base: #00BCD4,
+    contrast: #ffffff
+  ),
+  grey-color: #E8E9ED,
+  seg-dark: #3b3b3b,
+  light-grey: #D7D2D2,
+  tabs-color :  rgba(255,255,255,0.1)
+);
+
+$tabs-background: color($colors, primary, base) !important;
+$tabs-tab-color-active: #fff !important;
+$tabs-border-color: color($colors, primary, base) !important;
+$tabs-md-tab-text-color: #fff !important;
+$tabs-md-tab-text-color-active: #fff !important;
+// $text-input-placeholder-color: #fff !important;
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+$searchbar-ios-input-placeholder-color: color($colors, light, base) !important;
+$searchbar-ios-input-search-icon-color: color($colors, light, base) !important;
+$searchbar-ios-input-text-color: color($colors, light, base);
+$searchbar-ios-input-clear-icon-color: color($colors, light, base);
+$segment-button-ios-border-width: 0px;
+$segment-button-ios-text-color: #D62AFF;
+$segment-button-ios-text-color-activated: #D62AFF;
+$segment-button-ios-background-color: color($colors, seg-dark, base) !important;
+$segment-button-ios-background-color-activated: #fff;
+$tabs-ios-tab-color-active: color($colors, primary, base) !important;
+$tabs-ios-tab-icon-color: color($colors, light, base) !important;
+$tabs-ios-tab-icon-color-active: color($colors, light, base) !important;
+$tabs-ios-tab-text-color: color($colors, light, base) !important;
+$tabs-ios-tab-text-color-active: color($colors, light, base) !important;
+$segment-button-ios-text-color: color($colors, primary, base) !important;
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+$searchbar-md-background-color: color($colors, primary, base);
+$searchbar-md-input-background-color: color($colors, primary, base);
+$searchbar-md-input-placeholder-color:color($colors, light, base);
+$searchbar-md-input-search-icon-color: color($colors, light, base);
+$searchbar-md-input-clear-icon-color: color($colors, light, base);
+$searchbar-md-input-text-color: color($colors, light, base);
+$tabs-md-tab-icon-color: color($colors, light, base) !important;
+$tabs-md-tab-icon-color-active: color($colors, light, base) !important;
+$segment-button-md-text-color: #222 !important;
+$segment-button-md-text-color-activated: color($colors, primary, base);
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+$searchbar-wp-input-text-color: #fff !important;
+$tabs-wp-tab-color: color($colors, light, base) !important;
+$tabs-wp-tab-icon-color:color($colors, light, base) !important;
+$tabs-wp-tab-icon-color-active:color($colors, light, base) !important;
+// $segment-button-wp-text-transform: lowercase;
+$segment-button-wp-text-color-activated: #00BCD4;
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
+// @import "Baloo-Regular";

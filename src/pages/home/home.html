@@ -1,0 +1,71 @@
+<ion-content hide-fab no-padding class="bg">
+
+  <ion-card class="margin-top">
+      <ion-card-header>Featured</ion-card-header>
+  <ion-item-group>
+      <ion-row >
+        <ion-col no-padding>
+          <ion-slides>
+              <ion-slide>
+                <img src="http://lorempixel.com/700/300/sports"/>
+              </ion-slide>
+              <ion-slide>
+                  <img src="http://lorempixel.com/700/300/animals"/>
+              </ion-slide>
+              <ion-slide>
+                  <img src="http://lorempixel.com/700/300/nightlife"/>
+              </ion-slide>
+            </ion-slides>
+        </ion-col>
+      </ion-row> 
+    </ion-item-group>
+  </ion-card>
+
+  <ion-card class="margin-top">
+    <ion-card-header>Happenings</ion-card-header>
+  <ion-item-group>
+      <ion-row >
+        <ion-col col-4>
+          <div class="circle" item-start>
+            <h3>Today</h3>
+          </div>
+        </ion-col>
+        <ion-col col-4>
+          <div class="circle" item-start>
+            <h3>Tomorrow</h3>
+          </div>
+        </ion-col>
+        <ion-col col-4>
+          <div class="circle" item-start>
+            <h3>Upcoming</h3>
+          </div>
+        </ion-col>
+      </ion-row> 
+    </ion-item-group>
+  </ion-card>
+  <ion-card class="margin-top">
+    
+      <ion-card-header>Categories</ion-card-header>
+  <ion-item-group>
+    <ion-row >
+      <ion-col *ngFor="let category of categories" col-6 class="small-padding">
+          <ion-card >
+            <img [src]=category.url/>
+            <div class="card-title">{{ category.name }}</div>
+            <!-- <div class="card-subtitle">{{ category.listing }}</div> -->
+          </ion-card>
+      </ion-col>
+    </ion-row> 
+  </ion-item-group>
+</ion-card>
+
+
+	
+	<ion-fab bottom right #fab>
+		<button ion-fab (click)="addEvent()">
+		  <ion-icon name="create"></ion-icon>
+		</button>
+  </ion-fab>
+  
+</ion-content>
+

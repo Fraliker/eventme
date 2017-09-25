@@ -1,0 +1,54 @@
+// .md,.ios,.wp{
+//   .tabbar{
+//     background: transparent !important;
+//     // opacity:0.8;
+//   }
+// }
+
+// .bg{
+//   background: -moz-linear-gradient(bottom, rgba(0,188,212, 1) 0%, rgba(0,188,212, 0.8) 50%, rgba(0,188,212, 0.6) 100%); /* FF3.6-15 */
+//   background: -webkit-linear-gradient(bottom, rgba(0,188,212, 1) 0%,rgba(0,188,212, 0.8) 50%,rgba(0,188,212, 0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, rgba(0,188,212, 1),rgba(109, 226, 169, 0.43), rgba(37, 240, 172, 0.75) ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42d9f', endColorstr='#e6d62a94',GradientType=0 ); /* IE6-9 */
+// }
+
+.segment-ios .segment-button {
+    color: #222;
+  }
+
+  .segment-wp .segment-button {
+    width: 33%;
+    color: #222;
+  }
+
+  .segment-md .segment-button {
+    color: #222;
+  }
+
+  .segment-ios .segment-button.activated, .segment-ios .segment-button.segment-activated {
+    border-color: #222;
+    border-bottom: 2px solid #00BCD4;
+    opacity: 1;
+}
+
+.item-divider-wp{
+  font-size: 1.6rem;
+}
+
+.item-divider-ios{
+  font-size: 1.6rem;
+}
+
+.item-divider-md{
+  font-size: 1.6rem;
+}
+
+$text-input-ios-background-color: transparent;
+
+.blink{
+  animation: blinker 1.5s cubic-bezier(-0.5, 0, 1, 1) infinite alternate;
+}
+
+@keyframes blinker{
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

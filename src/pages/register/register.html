@@ -1,0 +1,27 @@
+<ion-content padding id="welcome">
+  
+    <ion-card>
+      <ion-card-header><img src="assets/images/logo.png" class="logo"/></ion-card-header>
+      <ion-card-content>
+        <ion-list no-lines>
+          <!-- <ion-item>
+            <ion-input type="text" placeholder="Name" [(ngModel)]="user.name"></ion-input>
+          </ion-item> -->
+          <ion-item>
+            <ion-input type="text" placeholder="Email" [(ngModel)]="user.email"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-input type="password" placeholder="Password" [(ngModel)]="user.password"></ion-input>
+          </ion-item>
+          <button tappable ion-button color="light" block outline (click)="register(user)">
+            Create Account
+          </button>
+          <!-- <button ion-button color="secondary" block>
+            <ion-icon name="logo-linkedin"></ion-icon>Login with LinkedIn
+          </button> -->
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+    <button ion-button clear full color="light" (click)="back()">Back to Login</button>
+  </ion-content>
+  

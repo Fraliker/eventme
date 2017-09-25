@@ -1,0 +1,37 @@
+page-events {
+
+     .card-background-page {
+
+    $card-ios-background-color: #222 !important;
+      
+    ion-card {
+      position: relative;
+      text-align: center;
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 100% !important;
+      background-color: #e7e7e7;
+    }        
+    .card-title {
+      text-align: left;
+      padding-left: 10px;
+      position: absolute;
+      top: 76%;
+      font-size: 1.6em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+    }  
+    .card-subtitle {
+      text-align: left;
+      padding-left: 10px;
+      font-size: 1.0em;
+      position: absolute;
+      top: 60%;
+      width: 100%;
+      color: #fff;
+    }        
+  }
+
+
+}
